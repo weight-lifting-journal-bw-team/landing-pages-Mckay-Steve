@@ -1,86 +1,47 @@
+@import "variables.less";
+@import "mixins.less";
+@import "navbar.less";
+@import "footer.less";
+
 // Font for whole page
 html {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
-    background-color: #e9eeef;
-    margin: 0;
+  background-color: #e9eeef;
+  margin: 0;
 }
 
 // Container
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
 }
-
-
-// Navbar styles
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    box-shadow: 0 0 5px 0 #e9eeef;
-    background-color: white;
-
-    h1 {
-        margin: 0;
-        margin-right: 350px;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        margin: 0 20px;
-        font-size: 1rem;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    button {
-        border: 1px solid #3527e8;
-        padding: 10px 20px;
-        color: #3527e8;
-        border-radius: 5px;
-        font-size: 1rem;
-        cursor: pointer;
-        background-color: white;
-    }
-
-    button:hover {
-        background-color: #3527e8;
-        color: white;
-    }
-}
-
 
 // Main Content
 .main-content {
-    background-color: #e9eeef;
-}
-
-
-// Footer
-footer {
-    background-color: #1e232d;
-    color: white;
-    padding: 10px 0;
-
-    nav {
-        margin-left: 225px;
+  //   background-color: white;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .intro {
+    width: 45%;
+    h2 {
+      color: #594eec;
     }
-
-    a {
-        color: black;
-        text-decoration: none;
-        margin: 10px;
-        color: white;
+    p {
+      color: black;
     }
-
-    .copyright {
-        text-align: center;
+  }
+  .intro-img {
+    width: 45%;
+    img {
+      border-radius: 5px;
+      height: auto;
+      width: 400px;
     }
+  }
 }
