@@ -111,7 +111,7 @@ body {
 .how-it-works .how-it-works-items .how-it-works-item {
   background-color: white;
   margin: 30px;
-  width: 23%;
+  width: 20%;
   text-align: center;
   border-radius: 5px;
   padding: 30px;
@@ -137,4 +137,62 @@ body {
   font-size: 1rem;
   cursor: pointer;
   background-color: #594eec;
+}
+.testimonials {
+  background-color: #1e232d;
+  color: white;
+}
+.testimonials .testimonials-header {
+  text-align: center;
+  padding: 40px 0 30px;
+}
+.testimonials .testimonials-header h2 {
+  font-size: 2rem;
+  margin: 10px;
+  font-weight: bold;
+}
+.testimonials .testimonials-header p {
+  font-size: 1rem;
+  margin: 5px;
+}
+.testimonials .customer-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.testimonials .customer-item .customer-item-img {
+  width: 50%;
+}
+.testimonials .customer-item .customer-item-img img {
+  width: 100%;
+  height: auto;
+}
+.testimonials .customer-item .customer-item-feedback {
+  width: 44%;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px 30px 0;
+}
+.testimonials .customer-item .customer-item-feedback h3 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.testimonials .customer-item .customer-item-feedback p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.testimonials .customer-item .customer-item-feedback button {
+  padding: 10px 20px;
+  color: #3527e8;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  margin-top: 10px;
+}
+.testimonials .customer-item .customer-item-feedback button:hover {
+  background-color: #3527e8;
+  color: white;
+  border-color: #3527e8;
 }
