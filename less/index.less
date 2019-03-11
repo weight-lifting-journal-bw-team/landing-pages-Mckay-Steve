@@ -14,50 +14,33 @@ body {
 
 // Container
 .container {
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
 }
 
 // Main Content
-
 .main-content {
   height: 300px;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .top-content {
-    width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .intro {
+    width: 45%;
+    h2 {
+      color: #594eec;
+    }
+    p {
+      color: black;
+    }
   }
-  .main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    height: 80vh;
-    .intro {
-      max-width: 400px;
-      background: #e9eeef91;
+  .intro-img {
+    width: 45%;
+    img {
       border-radius: 5px;
-      color: #0b1a1e;
-      padding: 20px;
-    }
-  }
-  .features {
-    display: flex;
-    align-items: center;
-    padding: 60px 0;
-    background: #e9eeef;
-    .features-text {
-      width: 45%;
-    }
-    .carousel {
-      width: 500px;
-      margin: 0 auto;
+      height: auto;
+      width: 400px;
     }
   }
 }
@@ -81,7 +64,7 @@ body {
       margin: 5px;
     }
   }
-
+  
   .how-it-works-items {
     padding: 10px;
     display: flex;
@@ -153,7 +136,7 @@ body {
 
     .customer-item-img {
       width: 50%;
-
+      
       img {
         width: 100%;
         height: auto;
