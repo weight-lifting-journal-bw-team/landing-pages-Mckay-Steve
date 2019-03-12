@@ -7,11 +7,23 @@
     padding: 50px 0;
     background-color: #1e232d;
     color: white;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
   
     .features-info {
-      width: 40%;
+      width: 45%;
       text-align: center;
-      padding: 60px 0  0 150px;
+      padding-top: 60px;
+      margin-left: 20px;
+
+      @media @mobile {
+        width: 100%;
+        margin: 0;
+        padding: 20px 10px;
+      }
   
       h2 {
         font-size: 2rem;
@@ -32,6 +44,7 @@
         background-color: white;
         margin-top: 10px;
         border-color: white;
+        width: 96px; 
       }
 
       button:hover {
@@ -43,8 +56,18 @@
     }
     
     .carousel {
-      width: 500px;
+      width: 45%;
       height: auto;
-      padding-right: 50px; 
+      margin-right: 20px;
+
+      @media @mobile {
+        width: 100%;
+        margin: 0;
+      }
+
+      #carouselExampleIndicators {
+        width: 100%;
+        height: auto;
+      }
     }
   }
