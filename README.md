@@ -1,4 +1,4 @@
-# Weight Lifting Journal Landing Pages
+# Weight Lifting Journal - Landing Pages
 
 ## About
 
