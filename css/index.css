@@ -135,6 +135,9 @@
   color: white;
   transition: 0.3s;
 }
+.dropdown {
+  display: none;
+}
 @media (max-width: 500px) {
   .dropdown {
     display: flex;
