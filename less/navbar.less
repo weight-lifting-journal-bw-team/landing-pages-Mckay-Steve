@@ -34,6 +34,15 @@
     display: flex;
     align-items: center;
 
+    .dropdown {
+      display: none;
+
+      @media @mobile {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    }
     @media @mobile {
       display: block;
       width: 100%;
