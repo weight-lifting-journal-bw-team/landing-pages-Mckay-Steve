@@ -36,19 +36,27 @@
   display: flex;
   align-items: center;
 }
+.navbar nav .dropdown {
+  display: none;
+}
+@media (max-width: 500px) {
+  .navbar nav .dropdown {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .navbar nav {
     display: block;
     width: 100%;
   }
 }
-
 @media (min-width: 501px) {
   .navbar nav {
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 }
 .navbar nav a {
