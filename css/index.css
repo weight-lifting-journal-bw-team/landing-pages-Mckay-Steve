@@ -275,6 +275,62 @@ footer .copyright {
   text-align: center;
   margin-bottom: 2rem;
 }
+.about-body {
+  background-image: linear-gradient(to top, #594eeca3, #2a4abee8, #11408e, #18325ceb, #1e232dd1);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-body .about {
+  color: #354560;
+}
+.about-body .about .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 40px;
+  color: #194183;
+}
+.about-body .about .team-intro {
+  border-radius: 10px;
+  background: #e9eeef;
+  text-align: center;
+  margin: 40px 0;
+}
+.about-body .about .team-intro .team-member {
+  padding: 20px 0;
+}
+.about-body .about .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-body .about .team h6 {
+  padding: 10px;
+}
+.about-body .about .team p {
+  width: 16rem;
+}
+.about-body .about .team img {
+  width: 200px;
+  border-radius: 10%;
+  transition: width 0.2s ease-in-out;
+}
+.about-body .about .team img:hover {
+  width: 230px;
+  box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.54);
+}
+.about-body .about .team .socials {
+  padding: 20px;
+}
+.about-body .about .team .socials a {
+  padding: 0 10px;
+}
+.about-body .about .team .socials i {
+  color: #194183;
+}
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
