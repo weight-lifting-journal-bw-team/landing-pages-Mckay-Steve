@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  box-shadow: 0 5px 10px 0 #1e232d4f;
+  box-shadow: 0 2px 2px 0 lightgray;
   background-color: white;
 }
 .navbar h1 {
@@ -20,72 +20,122 @@
 .navbar a:hover {
   text-decoration: underline;
 }
-.navbar button {
-  border: 1px solid #3527e8;
+.navbar .login {
+  margin-right: 10px;
+}
+.navbar .sign-up {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.navbar .login-button {
+  border: 1px solid #594eec;
   padding: 10px 20px;
-  color: #3527e8;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #594eec;
+}
+.navbar .sign-up-button {
+  border: 1px solid #594eec;
+  padding: 10px 20px;
+  color: #594eec;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
   background-color: white;
 }
 .navbar button:hover {
-  background-color: #3527e8;
+  background-color: #594eec;
   color: white;
-}
-footer {
-  background-color: #1e232d;
-  color: white;
-  padding: 10px 0;
-}
-footer nav {
-  margin-bottom: 4rem;
-}
-footer a {
-  color: black;
-  text-decoration: none;
-  margin: 10px;
-  color: white;
-}
-footer .copyright {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-html {
-  font-family: "Roboto", sans-serif;
-}
-body {
-  background-color: #e9eeef;
-  margin: 0;
-}
-.container {
-  width: 1000px;
-  margin: 0 auto;
+  transition: 0.3s;
 }
 .main-content {
-  height: 300px;
+  background-color: #f4f7fb;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   color: white;
+  padding: 50px 0;
 }
 .main-content .intro {
   width: 45%;
+  margin-left: 20px;
+  text-align: center;
 }
 .main-content .intro h2 {
-  color: #594eec;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .main-content .intro p {
   color: black;
 }
+.main-content .intro button {
+  border: 1px solid #594eec;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #594eec;
+}
+.main-content .intro button:hover {
+  color: #594eec;
+  background-color: white;
+  transition: 0.3s;
+}
 .main-content .intro-img {
   width: 45%;
+  margin-right: 20px;
 }
 .main-content .intro-img img {
-  border-radius: 5px;
+  width: 100%;
   height: auto;
-  width: 400px;
+}
+.features {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+  background-color: #1e232d;
+  color: white;
+}
+.features .features-info {
+  width: 40%;
+  text-align: center;
+  padding: 60px 0  0 150px;
+}
+.features .features-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.features .features-info p {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+.features .features-info button {
+  padding: 10px 20px;
+  color: #3527e8;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  margin-top: 10px;
+  border-color: white;
+}
+.features .features-info button:hover {
+  background-color: #3527e8;
+  color: white;
+  border-color: white;
+  transition: 0.3s;
+}
+.features .carousel {
+  width: 500px;
+  height: auto;
+  padding-right: 50px;
 }
 .how-it-works {
   background-color: #f4f7fb;
@@ -139,6 +189,11 @@ body {
   cursor: pointer;
   background-color: #594eec;
 }
+.how-it-works .how-it-works-items .how-it-works-item button:hover {
+  color: #594eec;
+  background-color: white;
+  transition: 0.3s;
+}
 .testimonials {
   background-color: #1e232d;
   color: white;
@@ -157,6 +212,7 @@ body {
   margin: 5px;
 }
 .testimonials .customer-item {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -169,7 +225,7 @@ body {
   height: auto;
 }
 .testimonials .customer-item .customer-item-feedback {
-  width: 44%;
+  width: 50%;
   text-align: center;
   margin-top: 50px;
   padding: 10px 30px 0;
@@ -191,9 +247,43 @@ body {
   cursor: pointer;
   background-color: white;
   margin-top: 10px;
+  border-color: white;
 }
 .testimonials .customer-item .customer-item-feedback button:hover {
   background-color: #3527e8;
   color: white;
-  border-color: #3527e8;
+  border-color: white;
+  transition: 0.3s;
+}
+footer {
+  background-color: #1e232d;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  padding-top: 20px;
+}
+footer nav {
+  margin-bottom: 4rem;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+}
+footer .copyright {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #e9eeef;
+  margin: 0;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
 }
