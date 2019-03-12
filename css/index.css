@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  box-shadow: 0 5px 10px 0 #1e232d4f;
+  box-shadow: 0 2px 2px 0 lightgray;
   background-color: white;
 }
 .navbar h1 {
@@ -20,7 +20,23 @@
 .navbar a:hover {
   text-decoration: underline;
 }
-.navbar button {
+.navbar .login {
+  margin-right: 10px;
+}
+.navbar .sign-up {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.navbar .login-button {
+  border: 1px solid #594eec;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #594eec;
+}
+.navbar .sign-up-button {
   border: 1px solid #594eec;
   padding: 10px 20px;
   color: #594eec;
@@ -32,6 +48,7 @@
 .navbar button:hover {
   background-color: #594eec;
   color: white;
+  transition: 0.3s;
 }
 .main-content {
   background-color: #f4f7fb;
@@ -54,6 +71,20 @@
 }
 .main-content .intro p {
   color: black;
+}
+.main-content .intro button {
+  border: 1px solid #594eec;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #594eec;
+}
+.main-content .intro button:hover {
+  color: #594eec;
+  background-color: white;
+  transition: 0.3s;
 }
 .main-content .intro-img {
   width: 45%;
@@ -86,13 +117,20 @@
   margin-top: 15px;
 }
 .features .features-info button {
-  border: 1px solid #594eec;
   padding: 10px 20px;
-  color: white;
+  color: #3527e8;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #594eec;
+  background-color: white;
+  margin-top: 10px;
+  border-color: white;
+}
+.features .features-info button:hover {
+  background-color: #3527e8;
+  color: white;
+  border-color: white;
+  transition: 0.3s;
 }
 .features .carousel {
   width: 500px;
@@ -151,6 +189,11 @@
   cursor: pointer;
   background-color: #594eec;
 }
+.how-it-works .how-it-works-items .how-it-works-item button:hover {
+  color: #594eec;
+  background-color: white;
+  transition: 0.3s;
+}
 .testimonials {
   background-color: #1e232d;
   color: white;
@@ -169,6 +212,7 @@
   margin: 5px;
 }
 .testimonials .customer-item {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -181,7 +225,7 @@
   height: auto;
 }
 .testimonials .customer-item .customer-item-feedback {
-  width: 44%;
+  width: 50%;
   text-align: center;
   margin-top: 50px;
   padding: 10px 30px 0;
@@ -203,16 +247,20 @@
   cursor: pointer;
   background-color: white;
   margin-top: 10px;
+  border-color: white;
 }
 .testimonials .customer-item .customer-item-feedback button:hover {
   background-color: #3527e8;
   color: white;
-  border-color: #3527e8;
+  border-color: white;
+  transition: 0.3s;
 }
 footer {
   background-color: #1e232d;
   color: white;
   padding: 10px 0;
+  text-align: center;
+  padding-top: 20px;
 }
 footer nav {
   margin-bottom: 4rem;
@@ -229,6 +277,7 @@ footer .copyright {
 }
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #e9eeef;
