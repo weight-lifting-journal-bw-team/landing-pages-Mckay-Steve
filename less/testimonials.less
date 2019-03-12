@@ -6,16 +6,35 @@
     .testimonials-header {
       text-align: center;
       padding: 40px 0 30px;
+
+      @media @mobile {
+        padding: 20px 0 0;
+      }
   
       h2 {
         font-size: 2rem;
         margin: 10px;
         font-weight: bold;
+
+        @media @mobile {
+          margin: 0 60px;
+        }
       }
   
       p {
         font-size: 1rem;
         margin: 5px;
+
+        @media @mobile {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    #james {
+
+      @media @mobile {
+        flex-direction: column-reverse;
       }
     }
   
@@ -27,6 +46,11 @@
   
       .customer-item-img {
         width: 50%;
+
+        @media @mobile {
+          width: 100%;
+          margin: 20px 0;
+        }
         
         img {
           width: 100%;
@@ -39,6 +63,11 @@
         text-align: center;
         margin-top: 50px;
         padding: 10px 30px 0;
+
+        @media @mobile {
+          width: 100%;
+          margin: 10px 0;
+        }
   
         h3 {
           width: 100%;

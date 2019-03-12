@@ -2,6 +2,13 @@
 .how-it-works {
     background-color: #f4f7fb;
     padding: 50px 0;
+
+    @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px 0;
+    }
   
     .how-it-works-header {
       text-align: center;
@@ -10,11 +17,19 @@
         font-size: 2rem;
         margin: 10px;
         font-weight: bold;
+
+        @media @mobile {
+          margin: 0;
+        }
       }
   
       p {
         font-size: 1rem;
         margin: 5px;
+
+        @media @mobile {
+          margin: 10px 0;
+        }
       }
     }
     
@@ -31,6 +46,12 @@
         text-align: center;
         border-radius: 5px;
         padding: 30px;
+
+        @media @mobile {
+          width: 100%;
+          margin: 10px 0;
+          padding: 20px 0;
+        }
   
         i {
           font-size: 4rem;
