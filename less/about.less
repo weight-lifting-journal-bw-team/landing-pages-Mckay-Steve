@@ -1,0 +1,64 @@
+.about-body {
+  background-image: linear-gradient(
+    to top,
+    #594eeca3,
+    #2a4abee8,
+    #11408e,
+    #18325ceb,
+    #1e232dd1
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  .about {
+    color: #354560;
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 40px;
+      padding: 40px;
+      color: #194183;
+    }
+    .team-intro {
+      border-radius: 10px;
+      background: #e9eeef;
+      text-align: center;
+      margin: 40px 0;
+      .team-member {
+        padding: 20px 0;
+      }
+    }
+    .team {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h6 {
+        padding: 10px;
+      }
+      p {
+        width: 16rem;
+      }
+      img {
+        width: 200px;
+        border-radius: 10%;
+        transition: width 0.2s ease-in-out;
+        &:hover {
+          width: 230px;
+          box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.54);
+          //   transition: ease-in-out 0.3s;
+        }
+      }
+      .socials {
+        padding: 20px;
+        a {
+          padding: 0 10px;
+        }
+        i {
+          color: #194183;
+        }
+      }
+    }
+  }
+}
