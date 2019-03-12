@@ -22,7 +22,8 @@
     text-align: center;
     margin-right: 0;
     padding-bottom: 5px;
-    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 3rem;
   }
 }
 .navbar nav {
@@ -51,7 +52,7 @@
     margin: 0;
     padding: 5px 0;
     justify-content: center;
-    border-bottom: 1px solid black;
+    font-size: 2rem;
   }
 }
 .navbar nav .navbar-buttons {
