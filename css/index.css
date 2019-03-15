@@ -11,6 +11,7 @@
 @media (max-width: 700px) {
   .navbar {
     flex-wrap: wrap;
+    height: auto;
   }
 }
 .navbar h1 {
